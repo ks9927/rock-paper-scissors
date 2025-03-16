@@ -20,3 +20,16 @@ function getComputerChoice() {
 }
 
 getComputerChoice();
+
+function getHumanChoice() {
+	let userChoice = prompt("Pick rock, paper, or scissors");
+
+	if (userChoice === ""){
+	console.log("Please try again");
+	}
+	else {
+	console.log(`User choice: ${userChoice}`);
+	}
+}
+
+getHumanChoice();
