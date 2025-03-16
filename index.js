@@ -39,4 +39,9 @@ function getHumanChoice() {
 	}
 }
 
+//calling getHumanChoice function
 getHumanChoice();
+
+//variables for human score and computer score that are set to 0
+let humanScore = 0;
+let computerScore = 0;
