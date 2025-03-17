@@ -95,6 +95,8 @@ function playGame(humanPick, computerPick){
         getHumanChoice();
 		playRound(humanPick, computerPick);
 	}
+    console.log("Human Score:" + humanScore);
+    console.log("Computer Score:" + computerScore);
 
 }
 
