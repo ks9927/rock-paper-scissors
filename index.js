@@ -46,7 +46,7 @@ let computerScore = 0;
 function playRound(humanChoice, computerChoice) {
 
     //variable to convert humanChoice string to lowercase
-    let convertHumanChoice = humanChoice.toLowerCase();
+    let convertHumanChoice = humanChoice;
 
     //if human wins
     if(convertHumanChoice === "rock" && computerChoice === "scissors")
@@ -86,10 +86,21 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-//variable that calls the getHumanChoice function
-const humanSelection = getHumanChoice();
-//variable that calls the getComputerChoice function
-const computerSelection = getComputerChoice();
 
 //calls the playRound function where humanSelection/computerSelection replaces the humanChoice/computerChoice variables/params
-playRound(humanSelection, computerSelection);
+//playRound(humanSelection, computerSelection);
+
+function playGame(humanPick, computerPick){
+
+    //variable that calls the getHumanChoice function
+    let humanSelection = getHumanChoice();
+    //variable that calls the getComputerChoice function
+    let computerSelection = getComputerChoice();
+	for(let i = 0; i < 4; i++)
+	{
+		playRound(humanPick, computerPick);
+	}
+
+}
+
+playGame();
