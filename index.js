@@ -45,3 +45,46 @@ getHumanChoice();
 //variables for human score and computer score that are set to 0
 let humanScore = 0;
 let computerScore = 0;
+
+//function to play a round
+function playRound(humanChoice, computerChoice) {
+    let humanChoice;
+    let computerChoice;
+
+    //if human wins
+    if(humanChoice == "rock" && computerChoice == "scissors")
+    {
+        console.log("You win! Rock beats scissors");
+        humanScore++;
+    }
+    else if(humanChoice == "paper" && computerChoice == "rock")
+    {
+        console.log("You win! Paper beats rock");
+        humanScore++;
+    }
+    else if(humanChoice == "scissors" && computerChoice == "paper")
+    {
+        console.log("You win! Scissors beats paper");
+        humanScore++;
+    }
+    //if human loses
+    else if(computerChoice == "paper" && humanChoice == "rock")
+    {
+        console.log("You lose. Rock covers paper");
+        computerScore++;
+    }
+    else if (computerChoice == "scissors" && humanChoice == "paper")
+    {
+        console.log("You lose. Scissors cuts paper");
+        computerScore++;
+    }
+    else if(computerChoice == "rock" && humanChoice == "scissors")
+    {
+        console.log("You lose. Rock crushes scissors");
+        computerScore++;
+    }
+    else if(computerChoice === humanChoice)
+    {
+        console.log("Its a tie!");
+    }
+}
