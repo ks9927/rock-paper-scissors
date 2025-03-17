@@ -45,39 +45,42 @@ let computerScore = 0;
 //function to play a round
 function playRound(humanChoice, computerChoice) {
 
+    //variable to convert humanChoice string to lowercase
+    let convertHumanChoice = humanChoice.toLowerCase();
+
     //if human wins
-    if(humanChoice === "rock" && computerChoice === "scissors")
+    if(convertHumanChoice === "rock" && computerChoice === "scissors")
     {
         console.log("You win! Rock beats scissors");
         humanScore++;
     }
-    else if(humanChoice === "paper" && computerChoice === "rock")
+    else if(convertHumanChoice === "paper" && computerChoice === "rock")
     {
         console.log("You win! Paper beats rock");
         humanScore++;
     }
-    else if(humanChoice === "scissors" && computerChoice === "paper")
+    else if(convertHumanChoice === "scissors" && computerChoice === "paper")
     {
         console.log("You win! Scissors beats paper");
         humanScore++;
     }
     //if human loses
-    else if(computerChoice === "paper" && humanChoice === "rock")
+    else if(computerChoice === "paper" && convertHumanChoice === "rock")
     {
         console.log("You lose. Rock covers paper");
         computerScore++;
     }
-    else if (computerChoice === "scissors" && humanChoice === "paper")
+    else if (computerChoice === "scissors" && convertHumanChoice === "paper")
     {
         console.log("You lose. Scissors cuts paper");
         computerScore++;
     }
-    else if(computerChoice === "rock" && humanChoice === "scissors")
+    else if(computerChoice === "rock" && convertHumanChoice === "scissors")
     {
         console.log("You lose. Rock crushes scissors");
         computerScore++;
     }
-    else if(computerChoice === humanChoice)
+    else if(computerChoice === convertHumanChoice)
     {
         console.log("Its a tie!");
     }
