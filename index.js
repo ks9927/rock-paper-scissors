@@ -88,3 +88,11 @@ function playRound(humanChoice, computerChoice) {
         console.log("Its a tie!");
     }
 }
+
+//variable that calls the getHumanChoice function
+const humanSelection = getHumanChoice();
+//variable that calls the getComputerChoice function
+const computerSelection = getComputerChoice();
+
+//calls the playRound function where humanSelection/computerSelection replaces the humanChoice/computerChoice variables/params
+playRound(humanSelection, computerSelection);
