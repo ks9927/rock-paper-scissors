@@ -28,12 +28,12 @@ function getHumanChoice() {
 
     //if user doesn't enter anything then logs pls try again
     //else it logs the user's entry
-    //When user presses ok then entry is returned automatically
 	if (userChoice === ""){
 	console.log("Please try again");
 	}
 	else {
 	console.log(`User choice: ${userChoice}`);
+    return userChoice;
 	}
 }
 
@@ -44,7 +44,7 @@ let computerScore = 0;
 
 //function to play a round
 function playRound(humanChoice, computerChoice) {
-    
+
     //if human wins
     if(humanChoice === "rock" && computerChoice === "scissors")
     {
