@@ -21,8 +21,6 @@ function getComputerChoice() {
 	
 }
 
-// Calling getComputerChoice function
-getComputerChoice();
 
 function getHumanChoice() {
     //prompts user for an option of rock,paper,or scissors
@@ -39,8 +37,6 @@ function getHumanChoice() {
 	}
 }
 
-//calling getHumanChoice function
-getHumanChoice();
 
 //variables for human score and computer score that are set to 0
 let humanScore = 0;
