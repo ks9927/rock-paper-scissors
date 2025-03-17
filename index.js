@@ -45,42 +45,39 @@ let computerScore = 0;
 //function to play a round
 function playRound(humanChoice, computerChoice) {
 
-    //variable to convert humanChoice string to lowercase
-    let convertHumanChoice = humanChoice;
-
     //if human wins
-    if(convertHumanChoice === "rock" && computerChoice === "scissors")
+    if(humanChoice === "rock" && computerChoice === "scissors")
     {
         console.log("You win! Rock crushes scissors");
         humanScore++;
     }
-    else if(convertHumanChoice === "paper" && computerChoice === "rock")
+    else if(humanChoice === "paper" && computerChoice === "rock")
     {
         console.log("You win! Paper covers rock");
         humanScore++;
     }
-    else if(convertHumanChoice === "scissors" && computerChoice === "paper")
+    else if(humanChoice === "scissors" && computerChoice === "paper")
     {
         console.log("You win! Scissors cuts paper");
         humanScore++;
     }
     //if human loses
-    else if(computerChoice === "paper" && convertHumanChoice === "rock")
+    else if(computerChoice === "paper" && humanChoice === "rock")
     {
         console.log("You lose. Rock covers paper");
         computerScore++;
     }
-    else if (computerChoice === "scissors" && convertHumanChoice === "paper")
+    else if (computerChoice === "scissors" && humanChoice === "paper")
     {
         console.log("You lose. Scissors cuts paper");
         computerScore++;
     }
-    else if(computerChoice === "rock" && convertHumanChoice === "scissors")
+    else if(computerChoice === "rock" && humanChoice === "scissors")
     {
         console.log("You lose. Rock crushes scissors");
         computerScore++;
     }
-    else if(computerChoice === convertHumanChoice)
+    else if(computerChoice === humanChoice)
     {
         console.log("Its a tie!");
     }
@@ -92,12 +89,10 @@ function playRound(humanChoice, computerChoice) {
 
 function playGame(humanPick, computerPick){
 
-    //variable that calls the getHumanChoice function
-    let humanSelection = getHumanChoice();
-    //variable that calls the getComputerChoice function
-    let computerSelection = getComputerChoice();
-	for(let i = 0; i < 4; i++)
-	{
+	for(let i = 0; i < 5; i++)
+	{   
+        getComputerChoice();
+        getHumanChoice();
 		playRound(humanPick, computerPick);
 	}
 
