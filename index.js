@@ -87,13 +87,13 @@ function playRound(humanChoice, computerChoice) {
 //calls the playRound function where humanSelection/computerSelection replaces the humanChoice/computerChoice variables/params
 //playRound(humanSelection, computerSelection);
 
-function playGame(humanPick, computerPick){
+function playGame(){
 
 	for(let i = 0; i < 5; i++)
 	{   
-        getComputerChoice();
-        getHumanChoice();
-		playRound(humanPick, computerPick);
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+		playRound(humanSelection, computerSelection);
 	}
     console.log("Human Score:" + humanScore);
     console.log("Computer Score:" + computerScore);
