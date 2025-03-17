@@ -64,7 +64,7 @@ function playRound(humanChoice, computerChoice) {
     //if human loses
     else if(computerChoice === "paper" && humanChoice === "rock")
     {
-        console.log("You lose. Rock covers paper");
+        console.log("You lose. Paper covers rock");
         computerScore++;
     }
     else if (computerChoice === "scissors" && humanChoice === "paper")
