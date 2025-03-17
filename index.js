@@ -26,7 +26,7 @@ getComputerChoice();
 
 function getHumanChoice() {
     //prompts user for an option of rock,paper,or scissors
-	let userChoice = prompt("Pick rock, paper, or scissors");
+	let userChoice = prompt("Pick rock, paper, or scissors").toLowerCase();
 
     //if user doesn't enter anything then logs pls try again
     //else it logs the user's entry
