@@ -3,15 +3,15 @@ function getComputerChoice() {
 	let randomNum = Math.floor(Math.random() *3) +1;
 
     // Checks if number is 1 to 3 and returns and logs a choice of rock, paper, or scissors
-    if(randomNum == 1) {
+    if(randomNum === 1) {
         console.log("comp choice: rock");
         return "rock";
     }
-    else if (randomNum == 2) {
+    else if (randomNum === 2) {
         console.log("comp choice: paper");
         return "paper";
     }
-    else if (randomNum == 3) {
+    else if (randomNum === 3) {
         console.log("comp choice: scissors");
         return "scissors";
     }
