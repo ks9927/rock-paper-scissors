@@ -51,17 +51,17 @@ function playRound(humanChoice, computerChoice) {
     //if human wins
     if(convertHumanChoice === "rock" && computerChoice === "scissors")
     {
-        console.log("You win! Rock beats scissors");
+        console.log("You win! Rock crushes scissors");
         humanScore++;
     }
     else if(convertHumanChoice === "paper" && computerChoice === "rock")
     {
-        console.log("You win! Paper beats rock");
+        console.log("You win! Paper covers rock");
         humanScore++;
     }
     else if(convertHumanChoice === "scissors" && computerChoice === "paper")
     {
-        console.log("You win! Scissors beats paper");
+        console.log("You win! Scissors cuts paper");
         humanScore++;
     }
     //if human loses
