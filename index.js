@@ -48,9 +48,7 @@ let computerScore = 0;
 
 //function to play a round
 function playRound(humanChoice, computerChoice) {
-    let humanChoice;
-    let computerChoice;
-
+    
     //if human wins
     if(humanChoice == "rock" && computerChoice == "scissors")
     {
