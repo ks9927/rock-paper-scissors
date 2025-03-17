@@ -26,7 +26,7 @@ getComputerChoice();
 
 function getHumanChoice() {
     //prompts user for an option of rock,paper,or scissors
-	let userChoice = prompt("Pick rock, paper, or scissors").toLowerCase();
+	let userChoice = prompt("Pick rock, paper, or scissors");
 
     //if user doesn't enter anything then logs pls try again
     //else it logs the user's entry
@@ -50,33 +50,33 @@ let computerScore = 0;
 function playRound(humanChoice, computerChoice) {
     
     //if human wins
-    if(humanChoice == "rock" && computerChoice == "scissors")
+    if(humanChoice === "rock" && computerChoice === "scissors")
     {
         console.log("You win! Rock beats scissors");
         humanScore++;
     }
-    else if(humanChoice == "paper" && computerChoice == "rock")
+    else if(humanChoice === "paper" && computerChoice === "rock")
     {
         console.log("You win! Paper beats rock");
         humanScore++;
     }
-    else if(humanChoice == "scissors" && computerChoice == "paper")
+    else if(humanChoice === "scissors" && computerChoice === "paper")
     {
         console.log("You win! Scissors beats paper");
         humanScore++;
     }
     //if human loses
-    else if(computerChoice == "paper" && humanChoice == "rock")
+    else if(computerChoice === "paper" && humanChoice === "rock")
     {
         console.log("You lose. Rock covers paper");
         computerScore++;
     }
-    else if (computerChoice == "scissors" && humanChoice == "paper")
+    else if (computerChoice === "scissors" && humanChoice === "paper")
     {
         console.log("You lose. Scissors cuts paper");
         computerScore++;
     }
-    else if(computerChoice == "rock" && humanChoice == "scissors")
+    else if(computerChoice === "rock" && humanChoice === "scissors")
     {
         console.log("You lose. Rock crushes scissors");
         computerScore++;
