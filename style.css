@@ -120,3 +120,23 @@ main {
     border: solid 2px var(--white);
     border-radius: 15px;
 }
+
+
+@media screen and (min-width: 750px){
+    
+    .scores {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .game-images {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .game-buttons {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+}
