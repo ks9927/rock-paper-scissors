@@ -55,10 +55,12 @@ main {
     outline: solid 2px red;
     padding: 15px;
     justify-content: space-around;
+    font-size: 20px;
 }
 
 .game-round {
     display: flex;
+    font-size: 20px;
 }
 
 .game-images {
@@ -68,7 +70,10 @@ main {
 .human-img,
 .computer-image {
     background-color: var(--black);
-    width: 80px;
+}
+
+.message {
+    font-size: 20px;
 }
 
 .game-buttons {
