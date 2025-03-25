@@ -60,3 +60,15 @@ main {
     background-color: var(--black);
     width: 80px;
 }
+
+.game-buttons {
+    display: flex;
+}
+
+.game-buttons > * {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 15px;
+    font-family: var(--font-fam);
+    border: solid 2px --white;
+}
