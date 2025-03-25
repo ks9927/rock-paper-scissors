@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 100vh;
 }
 
 header {
@@ -46,20 +47,16 @@ main {
     padding: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 .scores {
     display: flex;
-    outline: solid 2px red;
+    justify-content: space-around;
     padding: 15px;
     font-size: 20px;
 }
 
 .human-score,
 .computer-score {
-    outline: solid springgreen 2px;
     text-align: center;
 }
 .game-round {
