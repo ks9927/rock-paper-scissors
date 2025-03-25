@@ -22,6 +22,7 @@ header {
     background-color: var(--white);
     display: flex;
     justify-content: space-around;
+    padding: 50px;
 }
 
 .help-button {
@@ -31,4 +32,10 @@ header {
     height: auto;
     width: 50px;
     border-radius: 50px;
+}
+
+main {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 200px;
 }
