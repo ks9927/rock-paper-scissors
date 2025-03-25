@@ -24,7 +24,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 40px;
+    padding: 15px 20px;
 }
 
 header h1 {
@@ -35,7 +35,7 @@ header h1 {
     color: var(--white);
     font-weight: bold;
     height: 50px;
-    width: 80px;
+    width: 50px;
     border-radius: 50%;
     font-family: var(--font-fam);
     font-size: 2rem;
@@ -44,7 +44,7 @@ header h1 {
 main {
     background-color: var(--blue);
     color: var(--white);
-    padding: 100px;
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
 }
