@@ -37,7 +37,7 @@ header {
 main {
     background-color: var(--blue);
     color: var(--white);
-    padding: 200px;
+    padding: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,6 +46,9 @@ main {
 
 .scores {
     display: flex;
+    outline: solid 2px red;
+    padding: 15px;
+    justify-content: space-around;
 }
 
 .game-round {
