@@ -38,4 +38,8 @@ main {
     background-color: var(--blue);
     color: var(--white);
     padding: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
+
