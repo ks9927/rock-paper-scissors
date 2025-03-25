@@ -3,3 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --font-fam: "Pixelify Sans", sans-serif;
+    --white: #fffdfd;
+    --black: #000000;
+    --blue: #222fe6;
+}
