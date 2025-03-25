@@ -72,12 +72,14 @@ main {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    outline: solid 3px red;
 }
 
 .human-img,
 .computer-image {
     background-color: var(--black);
     width: 120px;
+    outline: solid 3px lime;
 }
 
 img {
