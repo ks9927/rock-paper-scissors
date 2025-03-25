@@ -51,8 +51,12 @@ main {
     display: flex;
 }
 
+.game-images {
+    display: flex;
+}
+
 .human-img,
 .computer-image {
     background-color: var(--black);
-    width: 50px;
+    width: 80px;
 }
