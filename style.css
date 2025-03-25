@@ -10,3 +10,25 @@
     --black: #000000;
     --blue: #222fe6;
 }
+
+body {
+    font-family: var(--font-fam);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-around;
+}
+
+.help-button {
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: bold;
+    height: auto;
+    width: 50px;
+    border-radius: 50px;
+}
