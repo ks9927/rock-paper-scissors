@@ -54,10 +54,14 @@ main {
     display: flex;
     outline: solid 2px red;
     padding: 15px;
-    justify-content: space-around;
     font-size: 20px;
 }
 
+.human-score,
+.computer-score {
+    outline: solid springgreen 2px;
+    text-align: center;
+}
 .game-round {
     display: flex;
     font-size: 20px;
