@@ -80,5 +80,6 @@ main {
     color: var(--black);
     padding: 15px;
     font-family: var(--font-fam);
+    font-size: 1.5rem;
     border: solid 2px --white;
 }
