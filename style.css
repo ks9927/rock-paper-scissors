@@ -47,7 +47,7 @@ main {
     padding: 100px;
     display: flex;
     flex-direction: column;
-
+}
 .scores {
     display: flex;
     justify-content: space-around;
@@ -61,6 +61,9 @@ main {
 }
 .game-round {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
 }
 
