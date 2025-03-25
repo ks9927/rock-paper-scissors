@@ -69,6 +69,8 @@ main {
 
 .game-images {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .human-img,
@@ -78,10 +80,15 @@ main {
 
 .message {
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .game-buttons {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .game-buttons > * {
