@@ -43,3 +43,16 @@ main {
     justify-content: space-around;
 }
 
+.scores {
+    display: flex;
+}
+
+.game-round {
+    display: flex;
+}
+
+.human-img,
+.computer-image {
+    background-color: var(--black);
+    width: 50px;
+}
