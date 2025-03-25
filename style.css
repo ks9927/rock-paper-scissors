@@ -97,5 +97,6 @@ main {
     padding: 15px;
     font-family: var(--font-fam);
     font-size: 1.5rem;
-    border: solid 2px --white;
+    border: solid 2px var(--white);
+    border-radius: 15px;
 }
