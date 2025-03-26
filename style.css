@@ -61,14 +61,7 @@ main {
 .computer-score {
     text-align: center;
 }
-.game-round {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
+
 
 .game-images {
     display: flex;
