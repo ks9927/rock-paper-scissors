@@ -70,18 +70,21 @@ function playRound(humanChoice, computerChoice) {
         message.textContent = "You win! Rock crushes scissors";
         console.log("You win! Rock crushes scissors");
         humanScore++;
+        humScore.textContent = humanScore;
     }
     else if(humanChoice === "paper" && computerChoice === "rock")
     {
         message.textContent = "You win! Paper covers rock";
         console.log("You win! Paper covers rock");
         humanScore++;
+        humScore.textContent = humanScore;
     }
     else if(humanChoice === "scissors" && computerChoice === "paper")
     {
         message.textContent = "You win! Scissors cuts paper";
         console.log("You win! Scissors cuts paper");
         humanScore++;
+        humScore.textContent = humanScore;
     }
     //if human loses
     else if(computerChoice === "paper" && humanChoice === "rock")
@@ -89,18 +92,21 @@ function playRound(humanChoice, computerChoice) {
         message.textContent = "You lose. Paper covers rock";
         console.log("You lose. Paper covers rock");
         computerScore++;
+        compScore.textContent = computerScore;
     }
     else if (computerChoice === "scissors" && humanChoice === "paper")
     {
         message.textContent = "You lose. Scissors cuts paper";
         console.log("You lose. Scissors cuts paper");
         computerScore++;
+        compScore.textContent = computerScore;
     }
     else if(computerChoice === "rock" && humanChoice === "scissors")
     {
         message.textContent = "You lose. Rock crushes scissors";
         console.log("You lose. Rock crushes scissors");
         computerScore++;
+        compScore.textContent = computerScore;
     }
     else if(computerChoice === humanChoice)
     {
