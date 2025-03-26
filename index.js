@@ -21,7 +21,7 @@ function getComputerChoice() {
         return "paper";
     }
     else if (randomNum === 3) {
-        computerImg.src = "images/computer-paper.png"
+        computerImg.src = "images/computer-scissors.png"
         console.log("comp choice: scissors");
         return "scissors";
     }
@@ -33,18 +33,7 @@ function getComputerChoice() {
 
 
 function getHumanChoice() {
-    //prompts user for an option of rock,paper,or scissors
-//	let userChoice = prompt("Pick rock, paper, or scissors");
-
-    //if user doesn't enter anything then logs pls try again
-    //else it logs the user's entry
-	if (userChoice === ""){
-	console.log("Please try again");
-	}
-	else {
-	console.log(`User choice: ${userChoice}`);
-    return userChoice;
-	}
+    
 }
 
 
