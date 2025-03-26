@@ -1,17 +1,25 @@
+const computerImg = document.querySelector(".computer-photo");
+const humanImg = document.querySelector(".human-photo");
+
+
+
 function getComputerChoice() {
     // Gives a number between 1 and 3
 	let randomNum = Math.floor(Math.random() *3) +1;
 
     // Checks if number is 1 to 3 and returns and logs a choice of rock, paper, or scissors
     if(randomNum === 1) {
+        computerImg.src = "images/computer-rock.png";
         console.log("comp choice: rock");
         return "rock";
     }
     else if (randomNum === 2) {
+        computerImg.src = "images/computer-paper.png"
         console.log("comp choice: paper");
         return "paper";
     }
     else if (randomNum === 3) {
+        computerImg.src = "images/computer-paper.png"
         console.log("comp choice: scissors");
         return "scissors";
     }
