@@ -33,7 +33,20 @@ function getComputerChoice() {
 
 
 function getHumanChoice() {
-    
+    rockBtn.addEventListener("click", () => {
+        humanImg.src = "images/rock-hand.png";
+        return "rock";
+    });
+
+    paperBtn.addEventListener("click", () => {
+        humanImg.src = "images/paper-hand.png";
+        return "paper";
+    });
+
+    scissorsBtn.addEventListener("click", () => {
+        humanImg.src = "images/scissor-hand.png";
+        return "scissors";
+    });
 }
 
 
