@@ -1,7 +1,9 @@
 const computerImg = document.querySelector(".computer-photo");
 const humanImg = document.querySelector(".human-photo");
 
-
+const rockBtn = document.querySelector(".rock-btn");
+const paperBtn = document.querySelector(".paper-btn");
+const scissorsBtn = document.querySelector(".scissors-btn");
 
 function getComputerChoice() {
     // Gives a number between 1 and 3
