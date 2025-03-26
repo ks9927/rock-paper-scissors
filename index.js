@@ -135,14 +135,12 @@ rockBtn.addEventListener("click", () => {
     });
 
 
-    const roundNum = document.querySelector(".round-num");
+const roundNum = document.querySelector(".round-num");
 // function playGame(){
 
 // 	for(let i = 0; i < 5; i++)
 // 	{   
-//         const humanSelection = getHumanChoice();
-//         const computerSelection = getComputerChoice();
-// 		playRound(humanSelection, computerSelection);
+      
 
 // 	}
 //     console.log("Human Score:" + humanScore);
