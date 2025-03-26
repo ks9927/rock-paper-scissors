@@ -56,6 +56,9 @@ function getHumanChoice() {
 let humanScore = 0;
 let computerScore = 0;
 
+const compScore = document.querySelector(".c-score");
+const humScore = document.querySelector(".h-score");
+
 //function to play a round
 function playRound(humanChoice, computerChoice) {
    // humanImg.src = "images/blank-img.png";
