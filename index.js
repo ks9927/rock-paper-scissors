@@ -58,6 +58,8 @@ let computerScore = 0;
 
 //function to play a round
 function playRound(humanChoice, computerChoice) {
+    humanImg.src = "images/blank-img.png";
+    computerImg.src = "images/blank-img.png";
 
     //if human wins
     if(humanChoice === "rock" && computerChoice === "scissors")
