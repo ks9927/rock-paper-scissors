@@ -5,6 +5,8 @@ const rockBtn = document.querySelector(".rock-btn");
 const paperBtn = document.querySelector(".paper-btn");
 const scissorsBtn = document.querySelector(".scissors-btn");
 
+const message = document.querySelector(".game-message");
+
 function getComputerChoice() {
     // Gives a number between 1 and 3
 	let randomNum = Math.floor(Math.random() *3) +1;
