@@ -107,6 +107,7 @@ function playRound(humanChoice, computerChoice) {
 }
 
 
+
 //calls the playRound function where humanSelection/computerSelection replaces the humanChoice/computerChoice variables/params
 //playRound(humanSelection, computerSelection);
 
@@ -116,7 +117,19 @@ function playGame(){
 	{   
         const humanSelection = getHumanChoice();
         const computerSelection = getComputerChoice();
-		playRound(humanSelection, computerSelection);
+		//playRound(humanSelection, computerSelection);
+
+        rockBtn.addEventListener("click", () => {
+            playRound("rock", computerSelection);
+        });
+        
+        paperBtn.addEventListener("click", () => {
+            playRound("paper", computerSelection);
+        });
+        
+        scissorsBtn.addEventListener("click", () => {
+            playRound("paper", computerSelection);
+        });
 	}
     console.log("Human Score:" + humanScore);
     console.log("Computer Score:" + computerScore);
