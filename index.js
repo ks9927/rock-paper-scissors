@@ -55,11 +55,10 @@ function getHumanChoice() {
 //variables for human score and computer score that are set to 0
 let humanScore = 0;
 let computerScore = 0;
-let roundNumber = 0;
 
 const compScore = document.querySelector(".c-score");
 const humScore = document.querySelector(".h-score");
-const roundNum = document.querySelector(".round-num");
+
 //function to play a round
 function playRound(humanChoice, computerChoice) {
 
@@ -112,8 +111,6 @@ function playRound(humanChoice, computerChoice) {
         message.textContent = "Its a tie!"
         console.log("Its a tie!");
     }
-    roundNumber++;
-    roundNum.textContent = roundNumber;
 }
 
 const humanSelection = getHumanChoice();
