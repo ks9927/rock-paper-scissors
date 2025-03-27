@@ -28,17 +28,6 @@ header {
 header h1 {
     font-size: 2rem;
 }
-.help-button {
-    background-color: var(--black);
-    color: var(--white);
-    font-weight: bold;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    font-family: var(--font-fam);
-    font-size: 2rem;
-    cursor: pointer;
-}
 
 main {
     background-color: var(--blue);
