@@ -14,21 +14,15 @@ function getComputerChoice() {
     // Checks if number is 1 to 3 and returns and logs a choice of rock, paper, or scissors
     if(randomNum === 1) {
         computerImg.src = "images/computer-rock.png";
-        console.log("comp choice: rock");
         return "rock";
     }
     else if (randomNum === 2) {
         computerImg.src = "images/computer-paper.png"
-        console.log("comp choice: paper");
         return "paper";
     }
     else if (randomNum === 3) {
         computerImg.src = "images/computer-scissors.png"
-        console.log("comp choice: scissors");
         return "scissors";
-    }
-    else {
-        console.log("Error");
     }
 	
 }
@@ -66,21 +60,18 @@ function playRound(humanChoice, computerChoice) {
     if(humanChoice === "rock" && computerChoice === "scissors")
     {
         message.textContent = "You win! Rock crushes scissors";
-        console.log("You win! Rock crushes scissors");
         humanScore++;
         humScore.textContent = humanScore;
     }
     else if(humanChoice === "paper" && computerChoice === "rock")
     {
         message.textContent = "You win! Paper covers rock";
-        console.log("You win! Paper covers rock");
         humanScore++;
         humScore.textContent = humanScore;
     }
     else if(humanChoice === "scissors" && computerChoice === "paper")
     {
         message.textContent = "You win! Scissors cuts paper";
-        console.log("You win! Scissors cuts paper");
         humanScore++;
         humScore.textContent = humanScore;
     }
@@ -88,30 +79,26 @@ function playRound(humanChoice, computerChoice) {
     else if(computerChoice === "paper" && humanChoice === "rock")
     {
         message.textContent = "You lose. Paper covers rock";
-        console.log("You lose. Paper covers rock");
         computerScore++;
         compScore.textContent = computerScore;
     }
     else if (computerChoice === "scissors" && humanChoice === "paper")
     {
         message.textContent = "You lose. Scissors cuts paper";
-        console.log("You lose. Scissors cuts paper");
         computerScore++;
         compScore.textContent = computerScore;
     }
     else if(computerChoice === "rock" && humanChoice === "scissors")
     {
         message.textContent = "You lose. Rock crushes scissors";
-        console.log("You lose. Rock crushes scissors");
         computerScore++;
         compScore.textContent = computerScore;
     }
     else if(computerChoice === humanChoice)
     {
         message.textContent = "Its a tie!"
-        console.log("Its a tie!");
     }
-    
+
     if(computerScore === 5) {
         message.textContent = "You lose the game :(";
     }
