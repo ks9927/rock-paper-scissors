@@ -111,41 +111,36 @@ function playRound(humanChoice, computerChoice) {
         message.textContent = "Its a tie!"
         console.log("Its a tie!");
     }
+    
+    if(computerScore === 5) {
+        message.textContent = "You lose the game :(";
+    }
+    else if (humanScore == 5) {
+        message.textContent = "You win the game :)"
+    }
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
+
+ const humanSelection = getHumanChoice();
 
 rockBtn.addEventListener("click", () => {
-
+    const computerSelection = getComputerChoice();
     playRound("rock", computerSelection);
     
     });
     
     paperBtn.addEventListener("click", () => {
-    
+        const computerSelection = getComputerChoice();
     playRound("paper", computerSelection);
     
     });
     
     scissorsBtn.addEventListener("click", () => {
-    
+        const computerSelection = getComputerChoice();
     playRound("scissors", computerSelection);
     
     });
 
 
 
-// function playGame(){
 
-// 	for(let i = 0; i < 5; i++)
-// 	{   
-      
-        
-// 	}
-//     console.log("Human Score:" + humanScore);
-//     console.log("Computer Score:" + computerScore);
-
-// }
-
-// playGame();
